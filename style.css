@@ -12,7 +12,7 @@ h1 {
     text-transform: uppercase;
     font-size: 6em;
     line-height: 500px;
-    color: darksalmon;
+    color: papayawhip;
     text-shadow: 5px 5px 5px black;
 }
 
@@ -26,8 +26,8 @@ h2 {
 h3 {
     font-size: 2.5em;
     text-transform: uppercase;
-    margin-top: 0.3em;
-    margin-bottom: 0.3em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 p, dl, ol, ul {
@@ -56,19 +56,28 @@ ol li::before {
     content: 'Шаг ' counter(number);
     counter-increment: number;
     font-weight: bold;
+    
+}
+
+li {
+    margin: 20px 0px 20px 0px;
 }
 
 ol p {
     font-size: 1em;
     display: inline-block;
-    margin-right: 20px;
-    max-width: calc(100% - 460px);
+    max-width: calc(100% - 520px);
     vertical-align: top;
+    height: 300px;
+    margin-left: 20px;
+
 }
 
 .container {
     width: 1140px;
     margin: 0 auto 100px auto;
+    
+
 }
 
 .desc {
@@ -78,5 +87,11 @@ ol p {
 }
 
 .step-img {
-    max-width: 400px;
+    max-width: 300px;
+    float: right;
+}
+
+.important {
+    margin: 2em 0em;
+    list-style-type: none;
 }
