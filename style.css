@@ -8,9 +8,14 @@
     background-image: url("images/bg.jpg");
     background-size: cover;
     background-position: center 70%;
-    text-align: center;
-    text-transform: uppercase;
+    display: grid;
+    place-items: center;
+    
+}
+
+.header-banner h1 {
     font-size: 6em;
+    text-align: center;
     line-height: 500px;
     color: papayawhip;
     text-shadow: 5px 5px 5px black;
@@ -69,8 +74,8 @@ p, dl, ol, ul {
     list-style-type: none;
     counter-reset: number;
     display: grid;
-    gap: 30px;
-    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .cooking__step::before {
@@ -86,12 +91,14 @@ p, dl, ol, ul {
 
 .cooking__step {
     display: flex;
-    width: 400px;
+    width: 350px;
     flex-direction: column-reverse;
+    justify-content: flex-end;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 0 10px 5px rgb(187, 187, 187);
     position: relative;
+    
 }
 
 
@@ -105,7 +112,7 @@ p, dl, ol, ul {
 }
 
 .container {
-    width: 1140px;
+    width: 90%;
     margin: 0 auto 100px auto;
 }
 
@@ -128,4 +135,72 @@ p, dl, ol, ul {
     list-style-type: none;
 }
 
+@media screen and (max-width: 960px) {
+    *{
+        max-width: 100vh;
+    }
 
+    .header-banner {
+        height: 50vh;
+    }
+
+    .header-banner h1 {
+        font-size: 4em;
+        line-height: 150%;
+    }
+
+    .container {
+        padding: 5%;
+    }
+
+    h2 {
+        font-size: 2.2em;
+        margin-top: 0.3em;
+        margin-bottom: 0.3em;
+    }
+    
+    h3 {
+        font-size: 1.8em;
+        margin-top: 0.2em;
+        margin-bottom: 0.2em;
+    }
+    
+    p, dl, ol, ul {
+        font-size: 1.5em;
+    }
+
+    .cooking__process {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cooking-step {
+        width: unset;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cooking__process {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 1200px) {
+    .ingredients {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .ingredients__header {
+        grid-column: 1/4;
+    }
+}
+
+.cooking__step {
+    contain: layout inline-size;
+}
+
+@conteiner (max-width: 300px) {
+    .cooking__step p {
+        font-size: 0.5em;
+    }
+}
