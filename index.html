@@ -7,11 +7,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="navigation">
+        <a href="#about">Описание</a>
+        <a href="#ingridients">Ингредиенты</a>
+        <a href="#step">Рецепт</a>
+        <a href="#note">Дополнительно</a>
+    </div>
+
     <div class="header-banner">
         <h1>Пицца пепперони</h1>
     </div>
     <main class="container">
-        <section class="intro">
+        <section class="intro" id="about">
             <article class="intro__article">
                 <p class="intro__p">
                     Вряд ли найдется человек, который не любит пиццу. Эти кусочки мягкого теста с разнообразной сочной начинкой покорили весь мир. Пепперони занимает лидирующие позиции среди остальных видов не зря: у пиццы замечательный солено-острый вкус.
@@ -24,7 +31,7 @@
             <p class="cook-time__value">1 час 40 минут</p>
         </section>
         
-        <section class="ingredients">
+        <section class="ingredients" id="ingridients">
             <h2 class="ingredients__header">Ингредиенты:</h2>
             <article class="element ingredients__element">
                 <h3 class="element__header">ТЕСТО:</h3>
@@ -93,7 +100,7 @@
             </article>
         </section>
 
-        <section class="cooking">
+        <section class="cooking" id="step">
             <h2 class="cooking__header">Приготовление:</h2>
             <article class="cooking__main">
                 <ol class="cooking__process">
@@ -214,7 +221,7 @@
                 </ol>
             </article>
 
-            <aside class="cooking__note">
+            <aside class="cooking__note" id="note">
                 <ul class="cooking__annotation">
                     <li>
                         &#10071; Так как степень солености, сладости, горечи, остроты, кислоты, жгучести у каждого индивидуальная, всегда добавляйте специи, пряности и приправы, ориентируясь на свой вкус! Если какую-то из приправ вы кладете впервые, то учтите, что есть специи, которые особенно важно не переложить (например, перец чили).
