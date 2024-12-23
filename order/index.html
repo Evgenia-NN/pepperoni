@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заказать пиццу</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>Заказать пиццу</h1>
+        <form class="order">
+            <ul>
+                <li>
+                    <label for="name">
+                        <span>Введите свое имя:</span>
+                        <input type="text" id="name" name="userName">
+                    </label>
+                </li>
+                <li>
+                    <label for="phone">
+                        <span>Введите номер телефона:</span>
+                        <input type="tel" id="phone" name="phone" placeholder="+7 (999) 999-99-99" required>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <span>Выберите пиццу:</span>
+                        <select>
+                            <option>Пепперони</option>
+                            <option>Маргарита</option>
+                            <option>Ветчина и грибы</option>
+                            <option>Три сыра</option>
+                            <option>Мясная</option>
+                        </select>
+                    </label>
+                </li>
+                <li>
+                <fieldset>
+                    <legend>Выберите размер пиццы:</legend>
+                    <label for="size">
+                        <input type="radio" id="small" name="size" value="small">
+                        <span>Маленький</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="medium" name="size" value="medium">
+                        <span>Средний</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="big" name="size" value="big">
+                        <span>Большой</span>
+                    </label>      
+                </fieldset>
+                </li>
+                <li>
+                    <fieldset>
+                        <legend>Выберите начинку для пиццы:</legend>
+                        <label>
+                            <input type="checkbox" id="mushrooms" name="filling">
+                            <span>Грибы</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="pepperoni" name="sfilling">
+                            <span>Пеперонни</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="olive" name="filling">
+                            <span>Оливки</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="pineapples" name="filling">
+                            <span>Ананасы</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="capers" name="filling">
+                            <span>Каперсы</span>
+                        </label>   
+                    </fieldset>
+                </li>
+                <li>
+                    <label>
+                        <span>Введите адрес доставки:</span>
+                        <input type="text" id="adress" name="userAdress">
+                    </label>
+                </li>
+                <button type="submit">Заказать</button>
+            </ul>
+        </form>
+    </div>
+</body>
+</html>

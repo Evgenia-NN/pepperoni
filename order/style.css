@@ -1,0 +1,50 @@
+h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+.order {
+    width: 400px;
+    padding: 1em;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 2em;
+}
+
+ul {
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    width: 400px;
+    border: 2px solid;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    background-color:rgb(127, 127, 127);
+    color: rgb(255, 255, 255);
+}
+
+input, select {
+    font: 1em times;
+    width: 200px;
+    border: 1px solid black;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+width: auto;
+padding: 5px;
+}
+
+fieldset {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    border: 1px solid black;
+}
